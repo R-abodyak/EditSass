@@ -11,11 +11,3 @@ gulp.task("to_css", function() {
 gulp.task("watch", function() {
     return gulp.watch("SASS/*.scss", gulp.series('to_css'))
 });
-
-/*
-gulp.task("sass:watch", () => watchSass([
-        "SASS/style..{scss,css}",
-        ""
-    ])
-    .pipe(sass())
-    .pipe(gulp.dest("./css")));*/
